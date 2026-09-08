@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vanshika Kaul | Live Resume</title>
+<meta name="description" content="Vanshika Kaul | Live Resume. Graduate Engineer, Artificial Intelligence & Data.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0D1013; --panel:#151A1F; --line:#262C33;
+    --text:#ECEFF2; --text-soft:#9BA4AD; --text-faint:#5E666E;
+    --accent:#A78BFA; --accent-dim:rgba(167,139,250,0.16);
+    --max:820px;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; background:var(--ink); color:var(--text);
+    font-family:'Inter', -apple-system, sans-serif; line-height:1.55; font-size:15px;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2{ font-family:'Space Grotesk', sans-serif; font-weight:600; margin:0; }
+  a{ color:var(--accent); text-decoration:none; }
+  a:hover{ text-decoration:underline; }
+  .mono{ font-family:'JetBrains Mono', monospace; }
+  .wrap{ max-width:var(--max); margin:0 auto; padding:48px 28px 80px; }
+
+  .topbar{
+    display:flex; justify-content:space-between; align-items:center;
+    margin-bottom:40px; gap:12px; flex-wrap:wrap;
+  }
+  .back{ font-size:0.85rem; color:var(--text-soft); }
+  .actions{ display:flex; gap:10px; }
+  .btn{
+    font-size:0.8rem; font-weight:600; padding:8px 14px; border-radius:3px;
+    border:1px solid var(--accent); color:var(--accent);
+  }
+  .btn:hover{ background:var(--accent); color:var(--ink); text-decoration:none; }
+
+  header.hd{ display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:20px; margin-bottom:6px; }
+  h1{ font-size:2rem; }
+  .role{ color:var(--accent); font-size:1rem; margin-top:6px; }
+  .contact-block{ text-align:right; font-size:0.85rem; color:var(--text-soft); line-height:1.7; }
+  @media (max-width:560px){ .contact-block{ text-align:left; } header.hd{ flex-direction:column; } }
+
+  .summary{ margin-top:22px; color:var(--text-soft); max-width:640px; font-size:0.95rem; }
+
+  hr{ border:none; height:1px; background:var(--line); margin:34px 0 26px; }
+
+  .stat-row{ display:flex; gap:0; flex-wrap:wrap; border:1px solid var(--line); border-radius:6px; overflow:hidden; margin-top:26px; }
+  .stat{ flex:1; min-width:130px; padding:14px 16px; border-right:1px solid var(--line); }
+  .stat:last-child{ border-right:none; }
+  .stat .num{ font-family:'Space Grotesk',sans-serif; color:var(--accent); font-size:1.3rem; }
+  .stat .lbl{ font-size:0.72rem; color:var(--text-faint); margin-top:2px; }
+
+  h2.sec{ font-size:0.78rem; letter-spacing:0.04em; color:var(--text-faint); text-transform:uppercase; margin-bottom:16px; }
+
+  .row{ display:grid; grid-template-columns:150px 1fr; gap:16px; padding:14px 0; border-top:1px solid var(--line); }
+  .row:first-of-type{ border-top:none; }
+  .row .when{ color:var(--text-faint); font-size:0.8rem; padding-top:2px; }
+  .row .title{ font-weight:600; font-size:0.98rem; }
+  .row .org{ color:var(--accent); font-size:0.87rem; margin-top:2px; }
+  .row ul{ margin:8px 0 0; padding-left:16px; color:var(--text-soft); font-size:0.88rem; }
+  .row li{ margin-bottom:5px; }
+  @media (max-width:560px){ .row{ grid-template-columns:1fr; gap:4px; } }
+
+  .skill-line{ display:grid; grid-template-columns:150px 1fr; gap:16px; padding:10px 0; font-size:0.88rem; }
+  .skill-line .k{ color:var(--text-faint); }
+  .skill-line .v{ color:var(--text); }
+  @media (max-width:560px){ .skill-line{ grid-template-columns:1fr; gap:2px; } }
+
+  .pill-row{ display:flex; flex-wrap:wrap; gap:8px; }
+  .pill{ font-size:0.76rem; background:var(--accent-dim); color:var(--accent); padding:4px 10px; border-radius:20px; }
+
+  .proj{ padding:12px 0; border-top:1px solid var(--line); font-size:0.9rem; }
+  .proj:first-of-type{ border-top:none; }
+  .proj .t{ font-weight:600; }
+  .proj a{ font-size:0.8rem; margin-left:8px; }
+  .proj p{ margin:4px 0 0; color:var(--text-soft); }
+
+  footer{ margin-top:44px; text-align:center; color:var(--text-faint); font-size:0.8rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="topbar">
+    <a class="back" href="index.html">&larr; Back to full site</a>
+    <div class="actions">
+      <a class="btn" href="VANSHIKA_KAUL.pdf" download="Vanshika Kaul.pdf">Download PDF</a>
+      <a class="btn" href="mailto:vanshikakaul16@gmail.com">Email me</a>
+    </div>
+  </div>
+
+  <header class="hd">
+    <div>
+      <h1>Vanshika Kaul</h1>
+      <div class="role">Graduate Engineer, Artificial Intelligence &amp; Data</div>
+    </div>
+    <div class="contact-block">
+      Melbourne, VIC, Australia<br>
+      <a href="mailto:vanshikakaul16@gmail.com">vanshikakaul16@gmail.com</a><br>
+      <a href="https://www.linkedin.com/in/vanshika-kaul/" target="_blank" rel="noopener" id="linkedinLink">LinkedIn</a> &nbsp;&middot;&nbsp; <a href="https://github.com/vanshikaacodes" target="_blank" rel="noopener" id="githubLink">GitHub</a>
+    </div>
+  </header>
+
+  <p class="summary">Master of Data Science (Deakin University, May 2026) with hands-on experience building and deploying AI, ML, and automation systems using Python, SQL, TensorFlow, and Power BI. Comfortable working directly with stakeholders to turn business problems into shipped technical solutions.</p>
+
+  <div class="stat-row">
+    <div class="stat"><div class="num">40%</div><div class="lbl">faster approvals, Village Roadshow</div></div>
+    <div class="stat"><div class="num">96.7%</div><div class="lbl">StreetSafe model accuracy</div></div>
+    <div class="stat"><div class="num">94.7%</div><div class="lbl">Nidec detection accuracy</div></div>
+    <div class="stat"><div class="num">8</div><div class="lbl">analytics projects at Trainity</div></div>
+  </div>
+
+  <hr>
+  <h2 class="sec">Experience</h2>
+
+  <div class="row">
+    <div class="when">Nov 2025 - Jan 2026</div>
+    <div>
+      <div class="title">AI Engineer Intern</div>
+      <div class="org">Village Roadshow Limited</div>
+      <ul>
+        <li>Shipped workflow automation (Power Automate, Airia, Workato) across vendors and campaign teams, cutting approval turnaround ~40%.</li>
+        <li>Built an LLM-powered legal contract summariser with Workato Genie, end to end.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="when">Jan 2023 - Jun 2023</div>
+    <div>
+      <div class="title">Data Analytics Trainee</div>
+      <div class="org">Trainity</div>
+      <ul>
+        <li>Delivered 8 end-to-end analytics projects; built Power BI dashboards that cut manual reporting by 6+ hrs/week.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="when">Dec 2021 - May 2022</div>
+    <div>
+      <div class="title">Artificial Intelligence Intern</div>
+      <div class="org">Nidec Motor Corporation</div>
+      <ul>
+        <li>Built a real-time motion detection system (OpenCV, Python) at 94.7% accuracy, deployed to production.</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr>
+  <h2 class="sec">Projects &amp; Publications</h2>
+
+  <div class="proj">
+    <span class="t">StreetSafe</span> - pothole detection Android app, 96.7% accuracy <a href="https://ieeexplore.ieee.org/document/10276151" target="_blank" rel="noopener">IEEE ↗</a>
+  </div>
+  <div class="proj">
+    <span class="t">Moodify</span> - real-time facial emotion detection web app <a href="https://ieeexplore.ieee.org/document/10276304" target="_blank" rel="noopener">IEEE ↗</a>
+  </div>
+  <div class="proj">
+    <span class="t">Heritage Monument Classifier</span> - CNN + ESRGAN, 100% validation accuracy
+  </div>
+  <div class="proj">
+    <span class="t">Sign Language Detection</span> - LSTM gesture recognition, 90.5% accuracy
+  </div>
+
+  <hr>
+  <h2 class="sec">Skills</h2>
+  <div class="skill-line"><div class="k">Languages</div><div class="v">Python, R, SQL, C++, Git</div></div>
+  <div class="skill-line"><div class="k">AI &amp; ML</div><div class="v">NLP, Computer Vision, Deep Learning, TensorFlow, PyTorch, Scikit-learn, OpenCV, NLTK, LLM agent platforms</div></div>
+  <div class="skill-line"><div class="k">Data</div><div class="v">Pandas, NumPy, ETL pipelines, MySQL, PostgreSQL</div></div>
+  <div class="skill-line"><div class="k">Automation</div><div class="v">Power Automate, Workato, Airia, n8n</div></div>
+  <div class="skill-line"><div class="k">Deployment</div><div class="v">Flask, Streamlit, MLflow</div></div>
+
+  <hr>
+  <h2 class="sec">Education</h2>
+  <div class="row">
+    <div class="when">2024 - 2026</div>
+    <div>
+      <div class="title">Master of Data Science</div>
+      <div class="org">Deakin University</div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="when">2020 - 2024</div>
+    <div>
+      <div class="title">B.E. Computer Science, AI/ML</div>
+      <div class="org">Chandigarh University</div>
+    </div>
+  </div>
+
+  <footer>Live resume · last updated 2026 · <a href="index.html">vanshikakaul.github.io</a></footer>
+
+</div>
+</body>
+</html>
